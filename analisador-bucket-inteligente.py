@@ -1,7 +1,3 @@
-#pip uninstall PIL
-#pip uninstall Pillow
-#pip install --upgrade Pillow
-
 from keras.models import load_model  # Importa a função para carregar o modelo treinado
 from PIL import Image, ImageOps  # Importa a biblioteca para manipular imagens
 import numpy as np  # Importa a biblioteca NumPy para trabalhar com arrays
