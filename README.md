@@ -10,7 +10,7 @@
 
 4) `pip3 install s3scanner`
 
-5) `python3 analisador-bucket-inteligente.py`
+5) `python3 analisador-bucket-inteligente.py <nome-bucket>`
 
 # Demonstração:
 
