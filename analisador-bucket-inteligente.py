@@ -60,6 +60,18 @@ def processar_imagens_no_diretorio(caminho_diretorio, modelo, nomes_classes):
 
 
 if __name__ == "__main__":
+    
+    if len(sys.argv) < 2:
+        print("Uso: python analisador-bucket-inteligente.py <nome-bucket>")        
+        sys.exit(1)
+
+    else:
+      nome_bucket = sys.argv[1]
+      nome_bucket = "/content/drive/MyDrive/intelligent-documents-finder/dataset misturado"
+    
+    diretorio_dump = "arquivos-do-bucket"
+    baixar_bucket_s3(nome_bucket, diretorio_dump)
+    
     caminho_modelo = "modelo_keras.h5"
     caminho_rotulos = "categorias.txt"
     caminho_diretorio = "dataset misturado/"
