@@ -2,13 +2,15 @@
 
 # Tutorial de uso:
 
-1) `pip uninstall PIL`
+1) `pip3 uninstall PIL`
 
-2) `pip uninstall Pillow`
+2) `pip3 uninstall Pillow`
 
-3) `pip install --upgrade Pillow`
+3) `pip3 install --upgrade Pillow`
 
-4) `python analisador-bucket-inteligente.py`
+4) `pip3 install s3scanner`
+
+5) `python3 analisador-bucket-inteligente.py`
 
 # Demonstração:
 
@@ -21,3 +23,4 @@
 * https://github.com/ricardobnjunior/Brazilian-Identity-Document-Dataset
 * https://www.kaggle.com/datasets/lprdosmil/unsplash-random-images-collection
 * https://www.kaggle.com/datasets/starktony45/image-dataset
+
