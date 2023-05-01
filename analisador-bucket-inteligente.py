@@ -5,6 +5,15 @@ import matplotlib.pyplot as plt  # Importa a biblioteca para visualização de d
 import os  # Importa a biblioteca para trabalhar com sistema de arquivos
 
 
+def baixar_bucket_s3(nome_bucket, diretorio_dump):
+    try:        
+        subprocess.run(["s3scanner", "dump", "--bucket", nome_bucket, "--dump-dir", diretorio_dump], check=True) # Executa o comando s3scanner para baixar o conteúdo do bucket S3        
+        print(f"Bucket S3 '{nome_bucket}' baixado para '{diretorio_dump}'.")        
+    except subprocess.CalledProcessError as e:        
+        print(f"Erro ao baixar o bucket S3 '{nome_bucket}': {e}")
+        return False
+    return True
+
 # Define a função para carregar o modelo treinado e os rótulos das classes
 def carregar_modelo_treinado(caminho_modelo, caminho_rotulos):
     modelo = load_model(caminho_modelo, compile=False)  # Carrega o modelo treinado
