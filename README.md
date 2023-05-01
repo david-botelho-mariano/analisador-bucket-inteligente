@@ -8,5 +8,7 @@
 
 3) `pip install --upgrade Pillow`
 
+4) `python3 analisador-bucket-inteligente.py`
+
 # Demonstração:
 
