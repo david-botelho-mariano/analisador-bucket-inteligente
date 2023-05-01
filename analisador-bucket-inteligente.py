@@ -60,9 +60,9 @@ def processar_imagens_no_diretorio(caminho_diretorio, modelo, nomes_classes):
 
 
 if __name__ == "__main__":
-    caminho_modelo = "/content/drive/MyDrive/intelligent-documents-finder/modelo_keras.h5"
-    caminho_rotulos = "/content/drive/MyDrive/intelligent-documents-finder/categorias.txt"
-    caminho_diretorio = "/content/drive/MyDrive/intelligent-documents-finder/dataset misturado"
+    caminho_modelo = "modelo_keras.h5"
+    caminho_rotulos = "categorias.txt"
+    caminho_diretorio = "dataset misturado/"
 
     modelo, nomes_classes = carregar_modelo_treinado(caminho_modelo, caminho_rotulos)  # Carrega o modelo treinado e os rótulos das classes
     processar_imagens_no_diretorio(caminho_diretorio, modelo, nomes_classes)  # Processa e classifica as imagens no diretório
