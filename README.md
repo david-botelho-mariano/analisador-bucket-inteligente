@@ -1,4 +1,9 @@
 # Analisador bucket inteligente
+1. Baixa um bucket S3 usando a ferramenta s3scanner.
+2. Carregar um modelo pré-treinado Keras e seus categorias de classe.
+3. Pré-processa imagens baixadas, redimensionando e normalizando as imagens.
+4. Classifica imagens usando o modelo Keras carregado e exibir a classe prevista e a pontuação de confiança.
+5. Exibir imagens classificadas com seus rótulos previstos.
 
 # Tutorial de uso:
 
