@@ -1,5 +1,6 @@
 # Analisador bucket inteligente
-O projeto baixa o conteúdo de um bucket do Amazon S3 usando a biblioteca s3scanner e processa todas as imagens no diretório baixado para classificar cada imagem usando o modelo pré-treinado. O resultado da classificação, que é a classe prevista e a pontuação de confiança, é exibido em cada imagem usando matplotlib.
+
+Esta ferramenta foi projetada para automatizar o processo de identificação de documentos sensiveis em buckets da AWS S3. Aproveitando o poder da técnica de transfer learning, a ferramenta realiza o download do bucket S3 escolhido, processa as imagens, prevê a classe do documento e fornece uma pontuação de confiança para cada previsão. 
 
 # Tutorial de uso:
 
