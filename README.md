@@ -1,5 +1,5 @@
 # Analisador bucket inteligente
-Esse código executa a classificação de imagens usando um modelo Keras pré-treinado. O código baixa o conteúdo de um bucket do Amazon S3 especificado como um argumento de linha de comando usando a biblioteca s3scanner. Em seguida, ele carrega um modelo Keras pré-treinado de um arquivo salvo e uma lista de rótulos de classe de um arquivo de texto. O código então processa todas as imagens no diretório baixado e classifica cada imagem usando o modelo pré-treinado. O resultado da classificação, que é a classe prevista e a pontuação de confiança, é exibido em cada imagem usando matplotlib.
+O projeto baixa o conteúdo de um bucket do Amazon S3 usando a biblioteca s3scanner e processa todas as imagens no diretório baixado para classificar cada imagem usando o modelo pré-treinado. O resultado da classificação, que é a classe prevista e a pontuação de confiança, é exibido em cada imagem usando matplotlib.
 
 # Tutorial de uso:
 
