@@ -4,15 +4,11 @@ Esta ferramenta foi projetada para automatizar o processo de identificação de 
 
 # Tutorial de uso:
 
-1) `pip3 uninstall PIL`
+1) `pip3 uninstall PIL Pillow`
 
-2) `pip3 uninstall Pillow`
+2) `pip3 install Pillow s3scanner tensorflow keras numpy matplotlib`
 
-3) `pip3 install --upgrade Pillow`
-
-4) `pip3 install s3scanner`
-
-5) `python3 analisador-bucket-inteligente.py <nome-bucket>`
+3) `python3 analisador-bucket-inteligente.py <nome-bucket>`
 
 # Demonstração:
 
