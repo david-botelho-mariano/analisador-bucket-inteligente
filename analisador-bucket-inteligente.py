@@ -3,6 +3,8 @@ from PIL import Image, ImageOps  # Importa a biblioteca para manipular imagens
 import numpy as np  # Importa a biblioteca NumPy para trabalhar com arrays
 import matplotlib.pyplot as plt  # Importa a biblioteca para visualização de dados
 import os  # Importa a biblioteca para trabalhar com sistema de arquivos
+import sys  # Importa a biblioteca para trabalhar com argumentos de linha de comando
+import subprocess  # Importa a biblioteca para executar comandos do sistema operacional
 
 
 def baixar_bucket_s3(nome_bucket, diretorio_dump):
