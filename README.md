@@ -1,6 +1,6 @@
 # Analisador bucket inteligente
 
-Esta ferramenta foi projetada para automatizar o processo de identificação de documentos sensiveis em buckets da AWS S3. Aproveitando o poder da técnica de transfer learning, a ferramenta realiza o download do bucket S3 escolhido, processa as imagens, prevê a classe do documento e fornece uma pontuação de confiança para cada previsão. 
+Esta ferramenta foi projetada para automatizar o processo de identificação de documentos sensiveis em buckets da AWS S3. Aproveitando o poder da técnica de transfer learning, a ferramenta realiza o download do bucket S3 escolhido, processa as imagens, prevê a classe da foto e fornece uma pontuação de confiança para cada previsão. 
 
 # Tutorial de uso:
 
