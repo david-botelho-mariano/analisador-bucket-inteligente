@@ -60,9 +60,19 @@ def processar_imagens_no_diretorio(caminho_diretorio, modelo, nomes_classes):
 
 
 if __name__ == "__main__":
-    caminho_modelo = "/content/drive/MyDrive/intelligent-documents-finder/modelo_keras.h5"
-    caminho_rotulos = "/content/drive/MyDrive/intelligent-documents-finder/categorias.txt"
-    caminho_diretorio = "/content/drive/MyDrive/intelligent-documents-finder/dataset misturado"
+    
+    if len(sys.argv) < 2:
+        print("Uso: python analisador-bucket-inteligente.py <nome-bucket>")        
+        sys.exit(1)
+
+    else:
+      nome_bucket = sys.argv[1]
+    
+    diretorio_dump = "arquivos-do-bucket/"
+    baixar_bucket_s3(nome_bucket, diretorio_dump)
+    
+    caminho_modelo = "modelo_keras.h5"
+    caminho_rotulos = "categorias.txt"
 
     modelo, nomes_classes = carregar_modelo_treinado(caminho_modelo, caminho_rotulos)  # Carrega o modelo treinado e os rótulos das classes
-    processar_imagens_no_diretorio(caminho_diretorio, modelo, nomes_classes)  # Processa e classifica as imagens no diretório
+    processar_imagens_no_diretorio(diretorio_dump , modelo, nomes_classes)  # Processa e classifica as imagens no diretório
