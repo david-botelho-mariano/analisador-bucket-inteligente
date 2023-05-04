@@ -52,9 +52,9 @@ def processar_imagens_no_diretorio(caminho_diretorio, modelo, nomes_classes):
             caminho_imagem = os.path.join(caminho_diretorio, nome_arquivo)
             dados, imagem = preprocessar_imagem(caminho_imagem)  # Preprocessa a imagem e obtém os dados normalizados
             nome_classe, pontuacao_confianca = prever_imagem(modelo, dados, nomes_classes)  # Preve a classe e a pontuação de confiança
-            #print(f"Arquivo: {nome_arquivo}")  # Exibe o nome do arquivo da imagem
-            #print("Classe:", nome_classe[2:], end="")  # Exibe a classe prevista
-            #print("Pontuação de Confiança:", pontuacao_confianca)  # Exibe a pontuação de confiança da previsão
+            print(f"Arquivo: {nome_arquivo}")  # Exibe o nome do arquivo da imagem
+            print("Classe:", nome_classe[2:], end="")  # Exibe a classe prevista
+            print("Pontuação de Confiança:", pontuacao_confianca)  # Exibe a pontuação de confiança da previsão
             plt.imshow(imagem)  # Mostra a imagem original
             plt.title(nome_classe[2:])  # Adiciona o título com a classe prevista à imagem
             plt.axis("off")  # Remove os eixos da imagem
